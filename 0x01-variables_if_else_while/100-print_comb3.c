@@ -4,13 +4,11 @@
 
 /**
 
- * main - Prints all possible combinations of two different digits,
-
- *        in ascending order, separated by a comma followed by a space.
+ * main - Entry point
 
  *
 
- * Return: Always 0.
+ * Return: Always 0 (Success)
 
  */
 
@@ -18,44 +16,140 @@ int main(void)
 
 {
 
- int digit1, digit2;
+int d = 48, a = 48;
 
 
 
- for (digit1 = 0; digit1 < 9; digit1++)
+while (d < 58)
 
- {
+{
 
-  for (digit2 = digit1 + 1; digit2 < 10; digit2++)
+a = 48;
 
-  {
+while (a < 58)
 
-   putchar((digit1 % 10) + 0);
+{
 
-   putchar((digit2 % 10) + 0);
+if (d != a && d < a)
 
+{
 
+putchar(d);
 
-   if (digit1 == 8 && digit2 == 9)
-
-    continue;
-
-   
-
-   putchar(,);
-
-   putchar( );
-
-  }
-
- }
+putchar(a);
 
 
 
- putchar(n);
+if (!(d == 56 && a == 57))
 
+{
 
+putchar(,);
 
- return (0);
+putchar( );
 
 }
+
+}
+
+a++;
+
+}
+
+d++;
+
+}
+
+putchar(n);
+
+
+
+return (0);
+
+}
+
+
+
+Task 11
+
+#include <stdio.h>
+
+
+
+/**
+
+ * main - Entry point
+
+ *
+
+ * Return: Always 0 (Success)
+
+ */
+
+int main(void)
+
+{
+
+int d = 48, a = 48, i = 48;
+
+
+
+while (d < 58)
+
+{
+
+a = 48;
+
+while (a < 58)
+
+{
+
+i = 48;
+
+while (i < 58)
+
+{
+
+if (d != a && a != i && d != i && d < a && a < i)
+
+{
+
+putchar(d);
+
+putchar(a);
+
+putchar(i);
+
+if (!(d == 55 && a == 56 && i == 57))
+
+{
+
+putchar(,);
+
+putchar( );
+
+}
+
+}
+
+i++;
+
+}
+
+a++;
+
+}
+
+d++;
+
+}
+
+putchar(n);
+
+
+
+return (0);
+
+}
+
+
